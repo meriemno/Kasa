@@ -8,6 +8,12 @@
     align-items: center;
     gap: 113px;
 
+    @media screen and (min-width: 768px) {
+        gap: 139px;
+       // width: 1440px;
+        padding-top: 40px;
+    }
+
 
     h1 {
         color: #FF6060;
@@ -24,6 +30,13 @@
         flex-direction: column;
         justify-content: center;
         flex-shrink: 0;
+
+        @media screen and (min-width: 768px) {
+            width: 597px;
+            height: 263px;
+            font-size: 288px;
+
+        }
     }
 
     p {
@@ -37,7 +50,12 @@
         line-height: 142.6%;
         /* 25.668px */
 
+        @media screen and (min-width: 768px) {
 
+            font-size: 36px;
+            width: 872px;
+
+        }
     }
 
     a {
@@ -50,5 +68,13 @@
         line-height: 142.6%;
         /* 19.964px */
         text-decoration-line: underline;
+
+        @media screen and (min-width: 768px) {
+            
+            font-size: 18px;
+            width: 284px;
+           
+            
+        }
     }
 }
