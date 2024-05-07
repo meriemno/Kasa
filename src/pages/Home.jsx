@@ -38,6 +38,8 @@ function Home() {
             </div>
             {/* pied de page : footer */}
             <Footer footer_img={footer} footer_text="© 2020 Kasa. All rights reserved" />
+
+           
         </>
 
     )
