@@ -1,0 +1,60 @@
+@import '../sass/utils/variables.scss';
+
+.banner {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    // left: 6px;
+
+
+    h1 {
+
+        font-family: $font-primary;
+        color: #FFF;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        position: absolute;
+        right: 35px;
+        left: 35px;
+        z-index: 1;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        @media screen and (min-width: 768px) {
+            -webkit-text-stroke-width: 1;
+            -webkit-text-stroke-color: #000;
+            font-size: 48px;
+            line-height: 142.6%;
+            left: auto;
+            right: auto;
+        }
+
+        @media screen and (min-width: 1024px) {
+            left: auto;
+            right: auto;
+        }
+    }
+
+    img {
+        width: 95vw;
+        height: 111px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        border: 1px solid #000;
+        background: #000;
+        mix-blend-mode: darken;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        object-fit: cover;
+
+        @media screen and (min-width: 768px) {
+            border-radius: 25px;
+            height: 223px;
+        }
+    }
+
+
+
+}

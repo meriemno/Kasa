@@ -1,0 +1,61 @@
+
+@import "../sass/utils/variables";
+
+
+.header {
+    height: 46.88px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 27px;
+    padding: 5px;
+    margin-top: 20px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 45px;
+    }
+
+    img {
+        width: 145px;
+        height: 46px;
+    }
+
+    nav {
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            gap: 26px;
+            flex: 1 0 0;
+
+            li {
+                a {
+                    Width: 55px;
+                    Height: 17px;
+                    line-height: 17px;
+                    font-size: 12px;
+                    color: #000;
+                    text-align: right;
+                    font-family: $font-primary;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 142.6%;
+                    
+                    @media screen and (min-width: 768px) {
+                        font-size: 24px;
+                    }
+
+                    &:hover {
+                        border-bottom: 1px solid #000;
+
+                    }
+                }
+
+            }
+        }
+    }
+
+
+}
