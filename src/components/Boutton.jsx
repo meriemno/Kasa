@@ -3,7 +3,7 @@ import "./boutton.scss";
 import { MdExpandLess } from 'react-icons/md';
 
 
-function Boutton({ qualite, description }) {
+function Boutton({ qualite, description}) {
     const [open, setOpen] = React.useState(false)
     function retrait_text() {
 

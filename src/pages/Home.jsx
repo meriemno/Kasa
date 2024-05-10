@@ -11,35 +11,27 @@ import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 
 
-
-
 function Home() {
-
-
     const banner_text = "Chez vous, partout et ailleurs";
-    
-
     return (
         <>
             {/* Entete :header */}
-
             <Header logo={logo} nav_home="Accueil" nav_about="A propos" />
 
             {/***** composant banniere *******/}
             <Banniere banner_img={bnr_img} banner_text={banner_text} />
 
             {/* contenu principale: cards */}
-
             <div className="main">
                 {
-                    logements.map((logement) => <Cards img_card={logement.cover} titre={logement.title} id={logement.id} />)
+                    logements.map((logement) => <Cards img_card={logement.cover} titre={logement.title} key={logement.id} />)
 
                 }
             </div>
+
             {/* pied de page : footer */}
             <Footer footer_img={footer} footer_text="© 2020 Kasa. All rights reserved" />
 
-           
         </>
 
     )

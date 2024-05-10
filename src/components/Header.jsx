@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.scss";
-
+import { Link } from "react-router-dom";
 
 function Header(props) {
     const { logo, nav_home, nav_about } = props
@@ -10,8 +10,8 @@ return(
         <img src={logo} alt="logo" />
         <nav>
             <ul>
-                <li><a href="#">{nav_home}</a></li>
-                <li><a href="#"> {nav_about}</a></li>
+                <li><Link to="/Home" className="link">{nav_home}</Link></li>
+                <li><Link to="/About" className="link">{nav_about}</Link></li>
             </ul>
         </nav>
         
