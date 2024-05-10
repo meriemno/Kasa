@@ -10,9 +10,12 @@
     margin-bottom: 27px;
     padding: 5px;
     margin-top: 20px;
+    width: 95vw;
+    
 
     @media screen and (min-width: 768px) {
         margin-top: 45px;
+        width: 93vw;
     }
 
     img {
