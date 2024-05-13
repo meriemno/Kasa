@@ -2,7 +2,7 @@ import React from "react";
 
 import Banniere from "../components/Banniere.jsx";
 import Cards from "../components/Cards.jsx";
-import "./_home.scss";
+import "./home.scss";
 import bnr_img from '../images/banner.png';
 import logo from '../images/LOGO.svg';
 import footer from '../images/lfooter.png';
@@ -12,6 +12,7 @@ import Footer from "../components/Footer.jsx";
 
 
 function Home() {
+
     const banner_text = "Chez vous, partout et ailleurs";
     return (
         <>

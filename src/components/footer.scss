@@ -3,20 +3,21 @@
 .footer {
     margin-top: 27px;
     display: flex;
-    width: 95vw;
+    width: 100vw;
     height: 209px;
     background-color: #000;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: auto;
-    z-index: 1;
+    //position: absolute;
+    // top: auto;
+    // z-index: 1;
     
     
 
     @media screen and (min-width: 768px) {
-       top: auto;
+      
+        
 
     }
 }

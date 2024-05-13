@@ -8,8 +8,8 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 40px;
-    
-    width: 95vw;
+    margin-inline: auto;
+    width: 89.26vw;
     
     @media screen and (min-width: 768px) {
 
@@ -17,16 +17,14 @@
     }
 
     .collapsed {
-        height: 0;
-        padding: 0;
-        margin: 0;
-        opacity: 0;
+       display: none;
+      
     }
 
     .collapse {
 
         display: inline-flex;
-        width: 95vw;
+        width: 89.26vw;
         height: 30px;
         padding: 10px 0px 10px 10px;
         align-items: center;

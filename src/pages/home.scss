@@ -15,24 +15,30 @@ body {
     margin-top: 22px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     gap: 20px;
-    left: 6px;
-    overflow-y: auto;
-    max-height: calc(100px * 4);
+    width: 89.26vw;
+    margin-inline:auto;
+    //left: 6px;
+    // overflow-y: auto;
+    // max-height: calc(100px * 4);
     //margin-left: 6px;
-    width: 95vw;
+    //width: 87.50vw;
 
     @media screen and (min-width: 768px) {
 
         flex-direction: row;
         flex-wrap: wrap;
+        
         background-color: #F6F6F6;
         row-gap: 50px;
         border-radius: 25px;
         padding: 50px 0;
-        max-height: 829px;
+        
+        margin-top: 50px;
+        width: 86.019vw;
+        
 
 
     }
