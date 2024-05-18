@@ -15,7 +15,7 @@ function About() {
 
     return (
         <>
-            <Header logo={logo} nav_home="Accueil" nav_about="A propos" />
+            <Header logo={logo} nav_home="ACCUEIL" nav_about="A PROPOS" />
             <Banniere banner_img={bnr_img} />
             <Collapse key="1" qualite="Fiabilité" description="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes." />
             <Collapse key="2" qualite="Respect" description="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />

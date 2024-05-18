@@ -17,7 +17,7 @@ function Home() {
     return (
         <>
             {/* Entete :header */}
-            <Header logo={logo} nav_home="Accueil" nav_about="A propos" />
+            <Header logo={logo} nav_home="ACCUEIL" nav_about="A PROPOS" />
 
             {/***** composant banniere *******/}
             <Banniere banner_img={bnr_img} banner_text={banner_text} />
@@ -25,9 +25,9 @@ function Home() {
             {/* contenu principale: cards */}
             <div className="main">
                 {
-                    logements.map((logement) => <Cards img_card={logement.cover} titre={logement.title} key={logement.id} />)
-
-                }
+                    logements.map((logement) => <Cards imgCard={logement.cover} titre={logement.title} id={logement.id} key={logement.id} url={"/logement"}/>)}
+                    {logements.map((logement) => console.log(logement.id))}
+                
             </div>
 
             {/* pied de page : footer */}

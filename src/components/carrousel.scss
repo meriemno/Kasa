@@ -1,0 +1,54 @@
+.carrousel {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    
+    width: 89.26vw;
+    height: 255px;
+    top: 116px;
+
+    @media screen and (min-width: 768px) {
+        width: 86.12vw;
+        top: 153px;
+    }
+
+    .left {        
+        cursor: pointer;
+
+        @media screen and (min-width: 768px) {
+            width: 46.68px;
+            height: 79.2px;
+            flex-shrink: 0;
+        }
+    }
+
+    .right {
+        cursor: pointer;
+
+        @media screen and (min-width: 768px) {
+            width: 46.68px;
+            height: 79.2px;
+            flex-shrink: 0;
+        }
+    }
+
+    .disabled {
+        display: none;
+    }
+
+}
+
+.carrouselImg {
+    width: 89.26vw;
+    height: 255px;
+    border-radius: 10px;
+    object-fit: cover;
+
+    @media screen and (min-width: 768px) {
+        width: 86.12vw;
+        height: 415px;
+        display: flex;
+        margin-inline: auto;
+
+    }
+}

@@ -11,7 +11,7 @@ import lfooter from '../images/lfooter.png';
 function Error() {
     return (
         <>
-            <Header logo={logo} nav_home="Accueil" nav_about="A propos" />
+            <Header logo={logo} nav_home="ACCUEIL" nav_about="A PROPOS" />
 
             <div className="error">
                 <h1>404</h1>
