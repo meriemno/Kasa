@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Home from './pages/Home.jsx';
+import Home from './pages/home/Home.jsx';
 import './sass/index.css';
-import Error from './pages/Error.jsx';
-import About from './pages/About.jsx'
+import Error from './pages/error/Error.jsx';
+import About from './pages/about/About.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Logement from './pages/Logement.jsx';
+import Logement from './pages/logement/Logement.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

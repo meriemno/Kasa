@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../layout/header/Header.jsx";
-import Footer from "../layout/footer/Footer.jsx";
-import './Error.scss';
-import logo from '../images/LOGO.svg';
-import lfooter from '../images/lfooter.png';
+import Header from "../../layout/header/Header.jsx";
+import Footer from "../../layout/footer/Footer.jsx";
+import '../error/Error.scss';
+import logo from '../../images/LOGO.svg';
+import lfooter from '../../images/lfooter.png';
 
 
 

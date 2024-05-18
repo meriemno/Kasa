@@ -1,15 +1,15 @@
 import React from "react";
-import Header from "../layout/header/Header.jsx";
-import Footer from "../layout/footer/Footer.jsx";
+import Header from "../../layout/header/Header.jsx";
+import Footer from "../../layout/footer/Footer.jsx";
 import { useParams } from "react-router-dom";
-import logo from '../images/LOGO.svg';
-import lfooter from '../images/lfooter.png';
-import logements from '../services/logement.json';
-import "./logement.scss";
-import Host from "../components/host/Host.jsx";
-import Collapse from "../components/collapse/Collapse.jsx";
-import Star from "../components/star/Star.jsx";
-import Carrousel from "../components/carrousel/Carrousel.jsx";
+import logo from '../../images/LOGO.svg';
+import lfooter from '../../images/lfooter.png';
+import logements from '../../services/logement.json';
+import "../logement/logement.scss";
+import Host from "../../components/host/Host.jsx";
+import Collapse from "../../components/collapse/Collapse.jsx";
+import Star from "../../components/star/Star.jsx";
+import Carrousel from "../../components/carrousel/Carrousel.jsx";
 
 
 
