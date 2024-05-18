@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./collapse.scss";
+import "../collapse/collapse.scss";
 import { MdExpandLess } from 'react-icons/md';
 
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
-import "./carrousel.scss";
+import "../carrousel/carrousel.scss";
 
 function Carrousel({ picture, title }) {
 

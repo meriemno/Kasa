@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../components/Header.jsx";
-import Footer from "../components/Footer.jsx";
+import Header from "../layout/header/Header.jsx";
+import Footer from "../layout/footer/Footer.jsx";
 import './Error.scss';
 import logo from '../images/LOGO.svg';
 import lfooter from '../images/lfooter.png';

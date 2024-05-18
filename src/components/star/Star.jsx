@@ -1,5 +1,5 @@
 import React from "react";
-import "./star.scss"
+import "../star/star.scss"
 
 
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./host.scss";
+import "../host/host.scss";
 
 function Host({ name, imgHost }) {
     return (

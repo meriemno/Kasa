@@ -1,14 +1,13 @@
 import React from "react";
-
-import Banniere from "../components/Banniere.jsx";
-import Cards from "../components/Cards.jsx";
+import Banniere from "../components/banniere/Banniere.jsx";
+import Cards from "../components/Cards/Cards.jsx";
 import "./home.scss";
 import bnr_img from '../images/banner.png';
 import logo from '../images/LOGO.svg';
 import footer from '../images/lfooter.png';
 import logements from '../services/logement.json';
-import Header from "../components/Header.jsx";
-import Footer from "../components/Footer.jsx";
+import Header from "../layout/header/Header.jsx";
+import Footer from "../layout/footer/Footer.jsx";
 
 
 function Home() {

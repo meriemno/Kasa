@@ -1,11 +1,11 @@
 import logo from '../images/LOGO.svg'
 import lfooter from '../images/lfooter.png'
-import Header from "../components/Header.jsx";
-import Footer from "../components/Footer.jsx";
-import Banniere from "../components/Banniere.jsx";
+import Header from "../layout/header/Header.jsx";
+import Footer from "../layout/footer/Footer.jsx";
+import Banniere from "../components/banniere/Banniere.jsx";
 import bnr_img from '../images/bnr_about.png'
 import React from 'react';
-import Collapse from '../components/Collapse.jsx';
+import Collapse from '../components/collapse/Collapse.jsx';
 
 
 function About() {
