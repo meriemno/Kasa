@@ -6,12 +6,12 @@ import logo from '../../images/LOGO.svg';
 import lfooter from '../../images/lfooter.png';
 
 
-
-
 function Error() {
     return (
         <>
-            <Header logo={logo} nav_home="ACCUEIL" nav_about="A PROPOS" />
+            <div className="headerAbout">
+                <Header logo={logo} nav_home="ACCUEIL" nav_about="A PROPOS" />
+            </div>
 
             <div className="error">
                 <h1>404</h1>
@@ -19,10 +19,8 @@ function Error() {
                 <a href="/">Retourner sur la page d'accueil</a>
             </div>
 
-
             <Footer footer_img={lfooter} footer_text="© 2024 Kasa. All rights reserved" />
         </>
-
     )
 }
 

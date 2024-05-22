@@ -7,10 +7,13 @@ body {
 
 }
 
+.headerHome {
 
+    margin-inline: auto;
+    width: 95%;
+}
 
-
-.main {
+.mainHome {
 
     margin-top: 22px;
     display: flex;
@@ -18,30 +21,31 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 89.26vw;
-    margin-inline:auto;
-    //left: 6px;
-    // overflow-y: auto;
-    // max-height: calc(100px * 4);
-    //margin-left: 6px;
-    //width: 87.50vw;
+    margin-inline: auto;
+    width: 95%;
 
     @media screen and (min-width: 768px) {
-
-        flex-direction: row;
-        flex-wrap: wrap;
-        
         background-color: #F6F6F6;
-        row-gap: 50px;
         border-radius: 25px;
-        padding: 50px 0;
-        
-        margin-top: 50px;
-        width: 86.019vw;
-        
+        width: 95%;
 
+    }
+
+    .cardHome {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 0;
+            gap: 50px;
+            margin-inline: auto;
+        }
 
     }
 
 }
-

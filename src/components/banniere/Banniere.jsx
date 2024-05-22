@@ -1,7 +1,6 @@
 import React from 'react';
 import '../banniere/banniere.scss';
 
-
 function Banniere({ banner_img, banner_text }) { 
     return (
         <div className="banner">

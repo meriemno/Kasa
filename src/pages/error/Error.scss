@@ -1,17 +1,23 @@
 @import '../../sass/utils/variables';
 
+.headerAbout {
+    width: 95%;
+    margin-inline: auto;
+}
+
 .error {
     display: flex;
-    width: 95vw;
+    width: 95%;
     padding-top: 20px;
     flex-direction: column;
     align-items: center;
     gap: 113px;
+    margin-inline: auto;
 
     @media screen and (min-width: 768px) {
         gap: 139px;
-       // width: 1440px;
         padding-top: 40px;
+        
     }
 
 
@@ -23,7 +29,6 @@
         font-style: normal;
         font-weight: 700;
         line-height: 142.6%;
-        /* 136.896px */
         display: flex;
         width: 198px;
         height: 99px;
@@ -35,12 +40,11 @@
             width: 597px;
             height: 263px;
             font-size: 288px;
-
         }
     }
 
     p {
-        width: 260px;
+        width: 95%;
         color: #FF6060;
         text-align: center;
         font-family: Montserrat;
@@ -48,12 +52,11 @@
         font-style: normal;
         font-weight: 500;
         line-height: 142.6%;
-        /* 25.668px */
 
         @media screen and (min-width: 768px) {
 
             font-size: 36px;
-            width: 872px;
+            width: 95%;
 
         }
     }
@@ -66,8 +69,8 @@
         font-style: normal;
         font-weight: 500;
         line-height: 142.6%;
-        /* 19.964px */
         text-decoration-line: underline;
+        text-align: center;
 
         @media screen and (min-width: 768px) {
             

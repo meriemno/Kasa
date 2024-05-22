@@ -1,0 +1,14 @@
+.headerAbout {
+    width: 95%;
+    margin-inline: auto;
+}
+
+.mainAbout {
+    width: 95%;
+    margin-inline: auto;
+
+    @media screen and (min-width: 768px) {
+        width: 80%;
+    }
+
+}

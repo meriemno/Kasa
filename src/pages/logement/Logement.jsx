@@ -21,24 +21,26 @@ function Logement() {
 
     return (
         <>
-            <Header logo={logo} nav_home="ACCUEIL" nav_about="A PROPOS" />
+            <div className="headerHome">
+                <Header logo={logo} nav_home="ACCUEIL" nav_about="A PROPOS" />
+            </div>
             <div className="containerCarrousel">
-
                 <Carrousel picture={pictures} />
-                <div className="infosLogement">
-                <h2> {title}</h2>
-                <p>{location}</p>
-                <div className="tags">
-                    {tags.map((tag) => <button className="tag" key={tag}>{tag}</button>)}
+                <div className="contentLogement">
+                    <h2> {title}</h2>
+                    <p>{location}</p>
+                    <div className="tags">
+                        {tags.map((tag) => <button className="tag" key={tag}>{tag}</button>)}
+                    </div>
                 </div>
+
+                <div className="hostLogementMobile">
+                    <Star rating={rating} />
+                    <Host name={host.name} imgHost={host.picture} id={host.id} key={host.id} />
                 </div>
-                <div className="hostLogement">
-                <Star rating={rating} />
-                <Host name={host.name} imgHost={host.picture} id={host.id} key={host.id} />
-                </div>
-                <div className="details">
+                <div className="detailsCollapse">
                     <Collapse qualite="Description" description={description} />
-                    <Collapse qualite="Équipements" 
+                    <Collapse qualite="Équipements"
                         description={<div className="equipments" >
                             {equipments.map((equipments) =>
                                 <ul className="equipment" key={equipments}>

@@ -16,19 +16,24 @@ function Home() {
     return (
         <>
             {/* Entete :header */}
-            <Header logo={logo} nav_home="ACCUEIL" nav_about="A PROPOS" />
+            <div className="headerHome">
+                <Header logo={logo} nav_home="ACCUEIL" nav_about="A PROPOS" />
+            </div>
 
             {/***** composant banniere *******/}
+
             <Banniere banner_img={bnr_img} banner_text={banner_text} />
 
             {/* contenu principale: cards */}
-            <div className="main">
-                {
-                    logements.map((logement) => <Cards imgCard={logement.cover} titre={logement.title} id={logement.id} key={logement.id} url={"/logement"}/>)}
+            <div className="mainHome">
+                <div className="cardHome">
+                    {
+                        logements.map((logement) => <Cards imgCard={logement.cover} titre={logement.title} id={logement.id} key={logement.id} url={"/logement"} />)
+                    }
                     {logements.map((logement) => console.log(logement.id))}
-                
+                </div>
             </div>
-
+            
             {/* pied de page : footer */}
             <Footer footer_img={footer} footer_text="© 2020 Kasa. All rights reserved" />
 

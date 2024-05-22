@@ -2,8 +2,6 @@ import React from "react";
 import "../star/star.scss"
 
 
-
-
 function Star({ rating }) {
     return (
         <div className="rating">
