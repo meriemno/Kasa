@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useState } from "react";
 import "../carrousel/carrousel.scss";
 
-function Carrousel({ picture}) {
+function Carrousel({ picture }) {
 
     const [index, setIndex] = useState(0);
 
@@ -35,7 +35,9 @@ function Carrousel({ picture}) {
                             </defs>
                         </svg>
                     </div>
-                    <div className="numberCarrousel"><p>{index + 1}/{picture.length}</p></div>
+                    <div className={picture.length === 1 ? "numberCarrousel none" : "numberCarrousel"}>
+                        <p>{index + 1}/{picture.length}</p>
+                    </div>
                 </div>
 
             </div>
