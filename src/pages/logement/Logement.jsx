@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../layout/header/Header.jsx";
 import Footer from "../../layout/footer/Footer.jsx";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import logo from '../../images/LOGO.svg';
 import lfooter from '../../images/lfooter.png';
 import logements from '../../services/logement.json';
@@ -15,10 +15,19 @@ import Carrousel from "../../components/carrousel/Carrousel.jsx";
 
 function Logement() {
     const { id } = useParams();
+   
+
+    if (!logements.find((logement) => logement.id === id)) {
+        // Redirection vers la page d'erreur
+       // window.location.href = "/error";
+    return <Navigate to="/error"/>
+        
+    }
     const { title, description, tags, rating, location, host, equipments, pictures } = logements.find(
         (logement) => logement.id === id);
 
-
+        
+       
     return (
         <>
             <div className="headerHome">

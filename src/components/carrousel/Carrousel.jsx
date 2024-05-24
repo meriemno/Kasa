@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useState } from "react";
 import "../carrousel/carrousel.scss";
 
-function Carrousel({ picture, title }) {
+function Carrousel({ picture}) {
 
     const [index, setIndex] = useState(0);
 

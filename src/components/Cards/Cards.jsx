@@ -2,7 +2,9 @@ import React from "react";
 import '../Cards/cards.scss';
 import { Link } from "react-router-dom";
 
-function Cards({ imgCard, titre, id, url }) {
+function Cards( props ) {
+
+    const { imgCard, titre, id, url } = props
 
 
     return (
