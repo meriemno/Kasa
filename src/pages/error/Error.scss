@@ -3,17 +3,17 @@
 .headerAbout {
     width: 95%;
     margin-inline: auto;
+    
 }
 
 .error {
     display: flex;
     width: 95%;
-    padding-top: 20px;
+    padding-top: 113px;
     flex-direction: column;
     align-items: center;
     gap: 113px;
-    margin-inline: auto;
-
+    
     @media screen and (min-width: 768px) {
         gap: 139px;
         padding-top: 40px;
