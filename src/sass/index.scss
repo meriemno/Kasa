@@ -1,9 +1,19 @@
-@import "utils/variables";
+@import "./utils/variables.scss";
 
-@import "bases/base";
+@import "./bases/base.scss";
 
-@import "composants/header";
-@import "composants/home";
-@import "composants/banniere";
+@import "../layout/header/header";
+@import "../layout/footer/footer";
 
+@import "../pages/home/home";
+@import "../pages/error/error";
+@import "../pages/about/about";
+@import "../pages/logement/logement";
+
+@import "../components/banniere/banniere";
+@import "../components/cards/cards";
+@import "../components/collapse/collapse";
+@import "../components/host/host";
+@import "../components/star/star";
+@import "../components/carrousel/carrousel";
 
