@@ -8,7 +8,7 @@
     margin-bottom: 25px;
     margin-inline: auto;
     width: 100%;
-
+    
     @media screen and (min-width: 768px) {
         margin-top: 30px;
     }
@@ -22,7 +22,6 @@
         justify-content: space-between;
         border-radius: 5px;
         background: var(--Red, #FF6060);
-        border: none;
 
         @media screen and (min-width: 768px) {
 
@@ -50,59 +49,60 @@
             }
         }
 
-        .up_down {
-            color: white;
-            font-size: 24px;
-            transform: rotate(180deg);
+          
 
-        }
+            .up_down {
+                color: white;
+                font-size: 24px;
+                transform: rotate(180deg);
+                
+            }
 
-        .up {
-            color: white;
-            font-size: 24px;
-            transition: all 0.3s linear;
-            height: 32px;
-            width: 32px;
-            padding-left: 7px;
+            .up {
+                color: white;
+                font-size: 24px;
+                transition: all 0.3s linear;
+                height: 32px;
+                width: 32px;
+                padding-left: 7px;
+                
+               
 
-
+                @media screen and (min-width: 768px) {
+                    font-size: 48px;
+                }
+            }
+        
+    }
+        .content {
+            width: 100%;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 1s ease, opacity 1s ease;
 
             @media screen and (min-width: 768px) {
-                font-size: 48px;
+                width: 100%;
+            }
+
+            .description {
+                padding: 10px;
+                border-radius: 5px;
+                background: var(--Gray,rgba(246, 246, 246, 0.85));
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 142.6%;
+                margin: 0;
+                text-align: left;
+                height: auto;
+                width: auto;
             }
         }
 
-    }
-
-    .content {
-        width: 100%;
-        max-height: 0;
-        opacity: 0;
-        overflow: hidden;
-        transition: max-height 1s ease, opacity 1s ease;
-
-        @media screen and (min-width: 768px) {
-            width: 100%;
-        }
-
-        .description {
-            padding: 10px;
-            border-radius: 5px;
-            background: var(--Gray, rgba(246, 246, 246, 0.85));
-            font-family: Montserrat;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 142.6%;
-            margin: 0;
-            text-align: left;
-            height: auto;
-            width: auto;
+        .open {
+            max-height: 500px;
+            opacity: 1;
         }
     }
-
-    .open {
-        max-height: 500px;
-        opacity: 1;
-    }
-}
