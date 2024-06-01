@@ -1,7 +1,7 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 import { useState } from "react";
 import "../carrousel/carrousel.scss";
+import PropTypes from 'prop-types';// Importation de PropTypes pour la vérification des types des props
 
 function Carrousel({ picture }) {
 
@@ -45,4 +45,9 @@ function Carrousel({ picture }) {
         </>
     )
 }
+
+Carrousel.propTypes = {
+    picture: PropTypes.arrayOf(PropTypes.string).isRequired,
+}
+
 export default Carrousel
